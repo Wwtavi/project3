@@ -1,0 +1,215 @@
+#root .light-theme{
+.aboutwr {
+        h2 {
+            font-family: "Roboto";
+            font-size: 45px;
+            font-weight: 400;
+            color: #000000;
+            padding-bottom: 50px;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h3 {
+                text-align: center;
+                color: #000000;
+                font-family: 'Source Sans 3';
+                font-size: 30px;
+                line-height: 20px;
+                font-weight: 500;
+                padding-bottom: 20px;
+            }
+
+            h4 {
+                text-align: center;
+                color: #000000;
+                font-family: 'Source Sans 3';
+                font-size: 25px;
+                font-weight: 500;
+                padding-bottom: 10px;
+            }
+
+            p {
+                text-decoration: unset;
+                text-align: center;
+                text-decoration: unset;
+                color: #767676;
+                font-family: "Source Sans 3";
+                font-size: 20px;
+                font-weight: 400;
+                padding-bottom: 40px;
+                line-height: 30px;
+
+                span {
+                    color: #212121;
+                }
+
+                a {
+                    text-decoration: unset;
+                    color: rgb(164, 164, 164);
+                }
+
+                a:hover {
+                    color: rgb(224, 12, 12);
+                }
+            }
+
+            .terms {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    li {
+                        a {
+                            text-decoration: unset;
+                            text-align: center;
+                            text-decoration: unset;
+                            color: rgb(164, 164, 164);
+                            font-family: "Source Sans 3";
+                            font-size: 20px;
+                            font-weight: 400;
+                            padding-bottom: 40px;
+                            line-height: 30px;
+                        }
+
+                        a:hover {
+                            color: rgb(224, 12, 12);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#root .dark-theme {
+    .aboutwr {
+        h2 {
+            font-family: "Roboto";
+            font-size: 45px;
+            font-weight: 400;
+            color: #ffffff;
+            padding-bottom: 50px;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h3 {
+                text-align: center;
+                color: #a5c2f2;
+                font-family: 'Source Sans 3';
+                font-size: 30px;
+                line-height: 20px;
+                font-weight: 500;
+                padding-bottom: 20px;
+            }
+
+            h4 {
+                text-align: center;
+                color: #a5c2f2;
+                font-family: 'Source Sans 3';
+                font-size: 25px;
+                font-weight: 500;
+                padding-bottom: 10px;
+            }
+
+            p {
+                text-decoration: unset;
+                text-align: center;
+                text-decoration: unset;
+                color: #ffffff;
+                font-family: "Source Sans 3";
+                font-size: 20px;
+                font-weight: 400;
+                padding-bottom: 40px;
+                line-height: 30px;
+
+                span {
+                    color: #aacfff;
+                }
+
+                a {
+                    text-decoration: unset;
+                    color: #ccdbf3;
+                }
+
+                a:hover {
+                    color: #ffffff;
+                }
+            }
+
+            .terms {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    li {
+                        a {
+                            text-decoration: unset;
+                            text-align: center;
+                            text-decoration: unset;
+                            color: #ffffff;
+                            font-family: "Source Sans 3";
+                            font-size: 20px;
+                            font-weight: 400;
+                            padding-bottom: 40px;
+                            line-height: 30px;
+                        }
+
+                        a:hover {
+                            color: #a5c2f2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+#root .light-theme .aboutwr, #root .dark-theme .aboutwr {
+        h2 {
+            font-size: 30px;
+            font-weight: 400;
+            padding-bottom: 40px;
+
+        }
+        .info{
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+            ul {
+                li {
+                    a {
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            h4 {
+                font-size: 19px;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+            }  
+        }
+}}

@@ -1,52 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.conteiner {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.helpwr{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    h2{
-        font-family: "Roboto";
-        font-size: 40px;
-        font-weight: 400;
-        color: #000000;
-        padding-bottom: 50px;
-        padding-top: 40px;
-        text-align: center;
-    }
-    .topics{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        h3{
-            text-decoration: unset;
-            color: black;
-            font-family: 'Source Sans 3';
-            font-size: 22px;
-            letter-spacing: 1px;
-            line-height: 20px;
-            font-weight: 500;
-            padding-bottom: 30px;
-        }
-        ul{
+#root .light-theme{
+    .helpwr {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            li{
+    
+            h2 {
+                text-align: center;
+                font-family: "Roboto";
+                font-size: 45px;
+                font-weight: 400;
+                color: #000000;
+                padding-bottom: 50px;
+                padding-top: 40px;
+            }
+    
+            .topics {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                padding-bottom: 25px;
-                a{
+    
+                h3 {
+                    color: black;
+                    font-family: 'Source Sans 3';
+                    font-size: 22px;
+                    letter-spacing: 1px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    padding-bottom: 30px;
+                }
+    
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        padding-bottom: 25px;
+    
+                        a {
+                            text-decoration: unset;
+                            text-align: center;
+                            text-decoration: unset;
+                            color: #767676;
+                            font-family: "Source Sans 3";
+                            font-size: 20px;
+                            letter-spacing: 1px;
+                            line-height: 20px;
+                            font-weight: 400;
+                        }
+    
+                        a:hover {
+                            color: rgb(224, 12, 12);
+                        }
+                    }
+                }
+    
+                button {
+                    margin-top: 14px;
+                    border: 1px solid rgb(0, 0, 0);
+                    padding: 10px 35px;
+                    background: rgba($color: #000000, $alpha: 1);
+    
+                    a {
+                        text-decoration: unset;
+                        color: rgb(255, 255, 255);
+                        font-family: "Roboto";
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+    
+                button:hover {
+                    background: rgba($color: #ffffff, $alpha: 0.7);
+                    border: 1px solid rgb(224, 12, 12);
+    
+                    a {
+                        color: rgb(224, 12, 12);
+                    }
+                }
+            }
+    
+            .time {
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding-top: 35px;
+    
+                h4 {
+                    text-decoration: unset;
+                    color: black;
+                    font-family: 'Source Sans 3';
+                    font-size: 22px;
+                    letter-spacing: 1px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    padding-bottom: 15px;
+                    text-align: center;
+                }
+    
+                p {
                     text-decoration: unset;
                     text-align: center;
                     text-decoration: unset;
@@ -55,68 +116,228 @@
                     font-size: 20px;
                     letter-spacing: 1px;
                     line-height: 20px;
-                    font-weight: 400;    
+                    font-weight: 400;
+                    text-align: center;
                 }
-                a:hover{
+            }
+        }
+    
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+    
+            h3 {
+                color: black;
+                font-family: 'Source Sans 3';
+                font-size: 22px;
+                letter-spacing: 1px;
+                line-height: 20px;
+                font-weight: 500;
+                padding-bottom: 10px;
+    
+            }
+    
+            input,
+            textarea {
+                width: 400px;
+                height: 40px;
+                border: 1.5px solid rgb(0, 0, 0);
+                border-radius: 5px;
+                margin-top: 15px;
+            }
+    
+            textarea {
+                margin-top: 25px;
+                height: 80px;
+            }
+    
+            button {
+                margin-top: 14px;
+                border: 1px solid rgb(0, 0, 0);
+                padding: 10px 75px;
+                background: rgba($color: #000000, $alpha: 1);
+    
+                p {
+                    text-decoration: unset;
+                    color: rgb(255, 255, 255);
+                    font-family: "Roboto";
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+            }
+    
+            button:hover {
+                background: rgba($color: #ffffff, $alpha: 0.7);
+                border: 1px solid rgb(224, 12, 12);
+    
+                p {
                     color: rgb(224, 12, 12);
                 }
             }
         }
-        button{
-            margin-top: 14px;
-            border: 1px solid rgb(0, 0, 0);
-            padding: 10px 35px;
-            background: rgba($color: #000000, $alpha: 1);
-            a{
-                text-decoration: unset;
-                color: rgb(255, 255, 255);
-                font-family: "Roboto";
-                font-size: 22px;
-                font-weight: 400;
-            }
-        }
-        button:hover{
-            background: rgba($color: #ffffff, $alpha: 0.7);
-            border: 1px solid rgb(224, 12, 12);
-            a{
-            color: rgb(224, 12, 12);
-            }
-        }
-    }
-    .time{
-
+}
+#root .dark-theme {
+    .helpwr {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-top: 65px;
-        h4{
-            text-decoration: unset;
-            color: black;
+
+        h2 {
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 45px;
+            font-weight: 400;
+            color: #a5c2f2;
+            padding-bottom: 50px;
+            padding-top: 40px;
+        }
+
+        .topics {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h3 {
+                color: rgb(255, 255, 255);
+                font-family: 'Source Sans 3';
+                font-size: 22px;
+                letter-spacing: 1px;
+                line-height: 20px;
+                font-weight: 500;
+                padding-bottom: 30px;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding-bottom: 25px;
+
+                    a {
+                        text-decoration: unset;
+                        text-align: center;
+                        text-decoration: unset;
+                        color: #a5c2f2;
+                        font-family: "Source Sans 3";
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                        line-height: 20px;
+                        font-weight: 400;
+                    }
+
+                    a:hover {
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+
+        .time {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 35px;
+
+            h4 {
+                text-decoration: unset;
+                color: rgb(255, 255, 255);
+                font-family: 'Source Sans 3';
+                font-size: 22px;
+                letter-spacing: 1px;
+                line-height: 20px;
+                font-weight: 500;
+                padding-bottom: 15px;
+                text-align: center;
+            }
+
+            p {
+                text-decoration: unset;
+                text-align: center;
+                text-decoration: unset;
+                color: #a5c2f2;
+                font-family: "Source Sans 3";
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 20px;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+
+        h3 {
+            color: rgb(255, 255, 255);
             font-family: 'Source Sans 3';
             font-size: 22px;
             letter-spacing: 1px;
             line-height: 20px;
             font-weight: 500;
-            padding-bottom: 15px;
-            text-align: center;
+            padding-bottom: 10px;
+
         }
-        p{
-            text-decoration: unset;
-            text-align: center;
-            text-decoration: unset;
-            color: #767676;
-            font-family: "Source Sans 3";
-            font-size: 20px;
-            letter-spacing: 1px;
-            line-height: 20px;
-            font-weight: 400;
-            text-align: center;
+
+        input,
+        textarea {
+            width: 400px;
+            height: 40px;
+            border: 1.5px solid ;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        textarea {
+            margin-top: 25px;
+            height: 80px;
+        }
+
+        button {
+            margin-top: 14px;
+            border: 1px solid #ffffff;
+            padding: 10px 75px;
+            background: rgba($color: #a5c2f2, $alpha: 1);
+
+            p {
+                text-decoration: unset;
+                color: #ffffff;
+                font-family: "Roboto";
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+
+        button:hover {
+            background: rgba($color: #0e2b50, $alpha: 1);
+            border: 1px solid rgb(255, 255, 255);
+
+            p {
+                color: rgb(255, 255, 255);
+            }
         }
     }
 }
 @media (max-width:500px) {
-    .helpwr{
+#root .light-theme .helpwr, #root .light-theme .helpwr{
         h2{
             font-size: 30px;
             font-weight: 400;
@@ -136,13 +357,6 @@
                     }
                 }
             }
-            button{
-                padding: 5px 20px;
-                a{
-                    font-size: 19px;
-                    font-weight: 400;
-                }
-            }
         }
         .time{
             h4{
@@ -155,4 +369,30 @@
             }
         }
     }
+#root .light-theme .form, #root .dark-theme .form{
+            input,
+            textarea {
+                width: 290px;
+            }
+            textarea {
+                margin-top: 25px;
+                height: 90px;
+            }
+    
+            button {
+                margin-top: 14px;
+                border: 1.5px solid #ffffff;
+                padding: 7px 75px;
+                background: rgba($color: #a5c2f2, $alpha: 1);
+    
+                p {
+                    text-decoration: unset;
+                    color: #ffffff;
+                    font-family: "Roboto";
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+            }
+    
+        }
 }

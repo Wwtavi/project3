@@ -1,0 +1,75 @@
+.page-404{
+    h2{
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 45px;
+        font-weight: 400;
+        color: #000000;
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    h3{
+        color: black;
+        text-align: center;
+        font-family: 'Source Sans 3';
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        font-weight: 500;
+        padding-bottom: 30px;
+    }
+    div{
+        text-align: center;
+        button {
+            margin-top: 14px;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px 35px;
+            background: rgba($color: #000000, $alpha: 1);
+    
+            a {
+                text-decoration: unset;
+                color: rgb(255, 255, 255);
+                font-family: "Roboto";
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+    
+        button:hover {
+            background: rgba($color: #ffffff, $alpha: 0.7);
+            border: 1px solid rgb(224, 12, 12);
+    
+            a {
+                color: rgb(224, 12, 12);
+            }
+        }
+
+    }
+
+}
+@media (max-width:500px) {
+    .page-404 {
+        h2 {
+            font-size: 30px;
+            font-weight: 400;
+            padding-bottom: 40px;
+            padding-bottom: 10px;
+
+        }
+        h3 {
+            font-size: 19px;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+        div{
+            button {
+                padding: 5px 20px;
+        
+                a {
+                    font-size: 19px;
+                    font-weight: 400;
+                }
+        }   }
+    }
+
+}
